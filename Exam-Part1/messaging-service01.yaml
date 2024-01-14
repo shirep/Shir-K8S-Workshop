@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: messaging-service01
+  name: messaging-service01
+spec:
+  ports:
+  - name: 6379-8080
+    port: 6379
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: messaging-service01
+  type: ClusterIP
+status:
+  loadBalancer: {}
