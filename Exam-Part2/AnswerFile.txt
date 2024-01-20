@@ -1,10 +1,24 @@
 1. kubectl get pods --show-labels
-2. 2-shir-nginx-pods.yaml
+2. The answer is in this file: 2-shir-nginx-pods.yaml
 3. kubectl get pods --show-labels
 4. kubectl get pods --selector=env=dev
 5. kubectl get pods --selector=env=dev --show-labels
 6. kubectl get pods --selector=env=prod
 7. kubectl get pods --selector=env=prod --show-labels
 8. kubectl get pods --selector=env
-9. kubectl get pods --selector=env=dev,env=prod --show-labels
-10. 
+9. kubectl get pods --selector=env=dev,env=prod
+10. kubectl get pods --selector=env=dev,env=prod --show-labels
+11. kubectl label pods shir-nginx-dev-5cf77c8694-jkmpn env=uat --overwrite
+12. kubectl label deployment shir-nginx-prod env-
+    kubectl label deployment shir-nginx-dev env-
+13. kubectl label pods --all app=nginx
+14. kubectl get nodes --show-labels
+15. kubectl label node k3d-k3s-default-server-0 nodeName=nginxnode
+16. The answer is in this file: 16-pod.yaml
+17. kubectl get pod nginx -o wide
+18. kubectl get pod nginx --show-labels
+
+
+
+
+
