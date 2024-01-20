@@ -4,4 +4,17 @@
 4. kubectl get pods -l app=webapp -o yaml > pods.yaml
    kubectl get replicaset -l app=webapp -o yaml > replicaset.yaml
 5. kubectl delete deployment webapp --cascade=true --wait=true
-6. 
+6. The answer is in this file: webapp2.yaml
+7. kubectl set image deployment/webapp nginx=nginx:1.17.4
+8. kubectl rollout history deployment/webapp
+   kubectl describe pod webapp-5db444b9fd-hjkj5    
+9. kubectl rollout undo deployment/webapp
+   kubectl describe pod webapp-665c6949b7-mv2l7
+10. kubectl set image deployment/webapp nginx=nginx:1.100
+    kubectl rollout undo deployment/webapp
+    kubectl set image deployment/webapp nginx=nginx:latest
+11. kubectl autoscale deployment webapp --cpu-percent=85 --min=10 --max=20
+    kubectl get hpa
+
+   
+   
