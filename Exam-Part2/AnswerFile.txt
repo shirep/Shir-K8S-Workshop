@@ -1,0 +1,10 @@
+1. kubectl get pods --show-labels
+2. 2-shir-nginx-pods.yaml
+3. kubectl get pods --show-labels
+4. kubectl get pods --selector=env=dev
+5. kubectl get pods --selector=env=dev --show-labels
+6. kubectl get pods --selector=env=prod
+7. kubectl get pods --selector=env=prod --show-labels
+8. kubectl get pods --selector=env
+9. kubectl get pods --selector=env=dev,env=prod --show-labels
+10. 
