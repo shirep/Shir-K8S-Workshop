@@ -1,0 +1,7 @@
+1. The answer is in this file: webapp.yaml
+2. kubectl rollout status deployment/webapp
+3. kubectl get replicaset -l app=webapp
+4. kubectl get pods -l app=webapp -o yaml > pods.yaml
+   kubectl get replicaset -l app=webapp -o yaml > replicaset.yaml
+5. kubectl delete deployment webapp --cascade=true --wait=true
+6. 
