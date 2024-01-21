@@ -7,7 +7,7 @@
    Create pod: kubectl apply -f nginx-pod.yml
    verify the variables in the container: kubectl exec -it nginx -- /bin/sh
                                           env
-    delete pod: kubectl delete pod nginx
+   delete pod: kubectl delete pod nginx
 
 
 
